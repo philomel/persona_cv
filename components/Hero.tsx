@@ -38,9 +38,9 @@ export const Hero: React.FC<HeroProps> = ({ isDark, onContactClick }) => {
             
             <div className={`p-4 border-l-4 mb-8 ${isDark ? 'border-green-500 bg-zinc-800' : 'border-indigo-600 bg-gray-50'}`}>
               <p className="text-xl md:text-2xl font-mono leading-relaxed">
-                <span className="font-bold">> Product Manager</span><br/>
-                <span className="opacity-70">> Web3 / DePIN / RWA</span><br/>
-                <span className="opacity-70">> Yield Protocols</span>
+                <span className="font-bold">&gt; Product Manager</span><br/>
+                <span className="opacity-70">&gt; Web3 / DePIN / RWA</span><br/>
+                <span className="opacity-70">&gt; Yield Protocols</span>
               </p>
             </div>
 
