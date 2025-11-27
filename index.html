@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-28">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leslie Zhang | Web3 Product Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"VT323"', 'monospace'],
+              pixel: ['"Press Start 2P"', 'cursive'],
+              mono: ['"VT323"', 'monospace'],
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'retro-hover': '2px 2px 0px 0px rgba(0,0,0,1)',
+              'retro-dark': '4px 4px 0px 0px rgba(255,255,255,1)',
+              'retro-dark-hover': '2px 2px 0px 0px rgba(255,255,255,1)',
+            },
+            colors: {
+              'retro-white': '#fdf6e3',
+              'retro-black': '#2d2d2d',
+              'retro-primary': '#ff00ff',
+              'retro-dark-bg': '#0f172a',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        /* Default to Light Mode colors, handled by Tailwind classes in App.tsx generally, but set defaults here */
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'VT323', monospace;
+        -webkit-font-smoothing: none; /* Crisper pixels */
+      }
+      
+      /* Selection color */
+      ::selection {
+        background: #000000;
+        color: #ffffff;
+      }
+      .dark ::selection {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #f0f0f0;
+        border-left: 2px solid #000;
+      }
+      .dark ::-webkit-scrollbar {
+        background: #1a1a1a;
+        border-left: 2px solid #fff;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #000000; 
+        border: 2px solid #f0f0f0;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border: 2px solid #1a1a1a;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
